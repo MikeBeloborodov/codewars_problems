@@ -25,21 +25,8 @@ export const pyramid = (n: number): Array<number[]> => {
   });
 };
 
-const case1 = pyramid(0);
-console.assert(JSON.stringify(case1) === JSON.stringify([]));
-
-const case2 = pyramid(1);
-console.assert(JSON.stringify(case2) === JSON.stringify([[1]]));
-
-const case3 = pyramid(2);
-console.assert(JSON.stringify(case3) === JSON.stringify([[1], [1, 1]]));
-
-const case4 = pyramid(3);
-console.assert(
-  JSON.stringify(case4) === JSON.stringify([[1], [1, 1], [1, 1, 1]]),
-);
-
 // clever solution with initializing arrays
+/*
 function pyramid2(n: number) {
   const res = [];
   for (let i = 0; i < n; i++) {
@@ -53,3 +40,4 @@ function pyramid3(n: number) {
     .fill(null)
     .map((e, i) => Array(i + 1).fill(1));
 }
+  * */

@@ -48,5 +48,5 @@ function makeWordArray(str: string): string[] {
   return str
     .trim()
     .split(" ")
-    .filter((word) => (word ? true : false));
+    .filter((word) => word);
 }

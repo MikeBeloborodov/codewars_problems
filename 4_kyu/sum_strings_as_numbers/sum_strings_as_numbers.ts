@@ -16,7 +16,7 @@ Python: your solution need to work with huge numbers (about a milion digits), co
 
   * */
 
-const sumStrings = (a: string, b: string): string => {
+export const sumStrings = (a: string, b: string): string => {
   const [long, short] =
     a.length >= b.length
       ? [a.split("").reverse().join(""), b.split("").reverse().join("")]
@@ -57,12 +57,3 @@ const sumStrings = (a: string, b: string): string => {
 
   return result;
 };
-
-const case1 = sumStrings("1234", "567");
-console.assert(case1 === "1801", "case1");
-
-const case2 = sumStrings("8797", "45");
-console.assert(case2 === "8842", "case2");
-
-const case3 = sumStrings("00103", "08567");
-console.assert(case3 === "8670", "case3");

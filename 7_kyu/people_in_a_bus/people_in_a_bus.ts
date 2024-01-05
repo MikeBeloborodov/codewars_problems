@@ -14,48 +14,12 @@ The second value in the first pair in the array is 0, since the bus is empty in 
 
 // my solution
 
-const peopleNumber = (busStops: Array<[number, number]>): number => {
+export const peopleNumber = (busStops: Array<[number, number]>): number => {
   return busStops.reduce((prev, curr, index, array) => {
     return prev + array[index][0] - array[index][1];
   }, 0);
 };
 
-const case1 = peopleNumber([
-  [10, 0],
-  [3, 5],
-  [5, 8],
-]);
-console.assert(
-  case1 === 5,
-  `peopleNumber([[10,0],[3,5],[5,8]]) === 5 but it is ${case1}`,
-);
-
-const case2 = peopleNumber([
-  [3, 0],
-  [9, 1],
-  [4, 10],
-  [12, 2],
-  [6, 1],
-  [7, 10],
-]);
-console.assert(
-  case2 === 17,
-  `peopleNumber([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]]) === 17 but it is ${case2}`,
-);
-
-const case3 = peopleNumber([
-  [3, 0],
-  [9, 1],
-  [4, 8],
-  [12, 2],
-  [6, 1],
-  [7, 8],
-]);
-console.assert(
-  case3 === 21,
-  `peopleNumber([[3,0],[9,1],[4,8],[12,2],[6,1],[7,8]]) === 21 but it is ${case3}`,
-);
-
 // clever solution
-const cleverPeopleNumber = (busStops: Array<[number, number]>): number =>
-  busStops.reduce((rem, [on, off]) => rem + on - off, 0);
+//const cleverPeopleNumber = (busStops: Array<[number, number]>): number =>
+//  busStops.reduce((rem, [on, off]) => rem + on - off, 0);

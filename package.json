@@ -4,7 +4,8 @@
   "description": "Various problems by kyu from website https://www.codewars.com/",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage -o",
+    "testall": "jest --coverage"
   },
   "keywords": [],
   "author": "",

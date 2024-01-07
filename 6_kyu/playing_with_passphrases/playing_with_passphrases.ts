@@ -18,7 +18,7 @@ your text: "BORN IN 2015!", shift 1
 5 "!4897 Oj oSpC"
   * */
 
-const playPass = (s: string, n: number): string => {
+export const playPass = (s: string, n: number): string => {
   return s
     .split("")
     .map((item) => {
@@ -40,12 +40,3 @@ const playPass = (s: string, n: number): string => {
     .reverse()
     .join("");
 };
-
-const case1 = playPass("I LOVE YOU!!!", 1);
-console.assert(case1 === "!!!vPz fWpM J", "case1 === '!!!vPz fWpM J'");
-
-const case2 = playPass("MY GRANMA CAME FROM NY ON THE 23RD OF APRIL 2015", 2);
-console.assert(
-  case2 === "4897 NkTrC Hq fT67 GjV Pq aP OqTh gOcE CoPcTi aO",
-  'case2 === "4897 NkTrC Hq fT67 GjV Pq aP OqTh gOcE CoPcTi aO"',
-);

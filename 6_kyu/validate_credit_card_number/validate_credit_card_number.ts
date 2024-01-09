@@ -29,7 +29,7 @@ Finally, take that sum and divide it by 10. If the remainder equals zero, the or
 18 (modulus) 10 ==> 8 , which is not equal to 0, so this is not a valid credit card number
   * */
 
-const validateCreditCardNumber = (n: number): boolean => {
+export const validateCreditCardNumber = (n: number): boolean => {
   return n
     .toString()
     .split("")
@@ -48,15 +48,3 @@ const validateCreditCardNumber = (n: number): boolean => {
     ? true
     : false;
 };
-
-const case1 = validateCreditCardNumber(123);
-console.assert(case1 === false, "case1 === false");
-
-const case2 = validateCreditCardNumber(1);
-console.assert(case2 === false, "case2 === false");
-
-const case3 = validateCreditCardNumber(2121);
-console.assert(case3 === true, "case3 === true");
-
-const case4 = validateCreditCardNumber(1230);
-console.assert(case4 === true, "case4 === true");

@@ -30,7 +30,7 @@ interface MyMap {
   total: number | undefined;
 }
 
-const bestParkingSlot = (arr: Array<keyof typeof Slots>): number => {
+export const bestParkingSlot = (arr: Array<keyof typeof Slots>): number => {
   let mapArr: MyMap[] = [];
   arr.forEach((item, index) => {
     if (item === "OPEN") {
@@ -58,33 +58,3 @@ const bestParkingSlot = (arr: Array<keyof typeof Slots>): number => {
     mapArr = mapArr.sort((x, y) => y.to_store - x.to_store);
   return mapArr[0].to_store;
 };
-
-const case1 = bestParkingSlot(["STORE", "OPEN", "CORRAL"]);
-console.assert(case1 === 1, "case1");
-
-const case2 = bestParkingSlot([
-  "STORE",
-  "TAKEN",
-  "CORRAL",
-  "TAKEN",
-  "OPEN",
-  "CORRAL",
-  "OPEN",
-]);
-console.assert(case2 === 4, "case2");
-
-const case3 = bestParkingSlot(["STORE", "OPEN", "TAKEN", "OPEN", "CORRAL"]);
-console.assert(case3 === 3, "case3");
-
-const case4 = bestParkingSlot([
-  "STORE",
-  "TAKEN",
-  "TAKEN",
-  "CORRAL",
-  "TAKEN",
-  "OPEN",
-  "OPEN",
-  "TAKEN",
-  "CORRAL",
-]);
-console.assert(case4 === 5, "case4");

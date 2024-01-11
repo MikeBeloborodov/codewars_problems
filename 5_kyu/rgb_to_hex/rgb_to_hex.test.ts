@@ -1,4 +1,4 @@
-import { hexToRgb } from "./4_rgb_to_hex";
+import { hexToRgb } from "./rgb_to_hex";
 
 test("test case 1", () => {
   expect(hexToRgb(255, 255, 255)).toBe("FFFFFF");

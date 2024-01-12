@@ -13,7 +13,7 @@ dashatize(6815) -> '68-1-5'
 
 // my solution
 
-const dashatize = (num: number): string | "NaN" => {
+export const dashatize = (num: number): string | "NaN" => {
   let res = Math.abs(num)
     .toString()
     .split("")
@@ -25,19 +25,10 @@ const dashatize = (num: number): string | "NaN" => {
   return Number.isNaN(num) ? "NaN" : res;
 };
 
-const case1 = dashatize(274);
-console.assert(case1 === "2-7-4", "case1");
-
-const case2 = dashatize(974302);
-console.assert(case2 === "9-7-4-3-02", "case2");
-
-const case3 = dashatize(5311);
-console.assert(case3 === "5-3-1-1", "case3");
-
 // regexp solution
-function dashatize2(num: number) {
-  return String(num)
-    .replace(/([13579])/g, "-$1-")
-    .replace(/--+/g, "-")
-    .replace(/(^-|-$)/g, "");
-}
+//function dashatize2(num: number) {
+//  return String(num)
+//    .replace(/([13579])/g, "-$1-")
+//    .replace(/--+/g, "-")
+//    .replace(/(^-|-$)/g, "");
+//}

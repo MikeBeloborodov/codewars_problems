@@ -10,3 +10,10 @@ cd codewars_problems
 npm i
 npm run test
 ```
+### Katas solved
+- ```Total```: 30
+- ```8_kyu```: 3
+- ```7_kyu```: 3
+- ```6_kyu```: 14
+- ```5_kyu```: 7
+- ```4_kyu```: 3

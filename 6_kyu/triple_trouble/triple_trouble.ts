@@ -19,7 +19,7 @@ tripledouble(666789, 12345667) == 1
 
 // my solution
 
-const tripledouble = (num1: number, num2: number): 1 | 0 => {
+export const tripledouble = (num1: number, num2: number): 1 | 0 => {
   let flag = false;
   const firstFilter: string[] = [];
   num1
@@ -49,27 +49,15 @@ const tripledouble = (num1: number, num2: number): 1 | 0 => {
   return 0;
 };
 
-const case1 = tripledouble(451999277, 41177722899);
-console.assert(case1 === 1, "case1 === 1");
-
-const case2 = tripledouble(1222345, 12345);
-console.assert(case2 === 0, "case2 === 0");
-
-const case3 = tripledouble(666789, 12345667);
-console.assert(case3 === 1, "case3 === 1");
-
-const case4 = tripledouble(1112, 122);
-console.assert(case4 === 0, "case4 === 0");
-
 // regexp solution
-function tripledouble2(num1: number, num2: number) {
-  for (let i = 0; i < 10; i++) {
-    if (
-      new RegExp(`${i}{3}`).test(num1.toString()) &&
-      new RegExp(`${i}{2}`).test(num2.toString())
-    ) {
-      return 1;
-    }
-  }
-  return 0;
-}
+//function tripledouble2(num1: number, num2: number) {
+//  for (let i = 0; i < 10; i++) {
+//    if (
+//      new RegExp(`${i}{3}`).test(num1.toString()) &&
+//      new RegExp(`${i}{2}`).test(num2.toString())
+//    ) {
+//      return 1;
+//    }
+//  }
+//  return 0;
+//}

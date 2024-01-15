@@ -1,0 +1,5 @@
+import { highestRank } from "./highest_rank_number_array";
+
+test("test case 1", () => {
+  expect(highestRank([12, 10, 8, 12, 7, 6, 4, 10, 10, 12])).toBe(12);
+});

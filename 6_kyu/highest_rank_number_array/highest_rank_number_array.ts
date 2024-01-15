@@ -13,7 +13,7 @@ interface MyMap {
   [key: string]: number;
 }
 
-const highestRank = (arr: number[]): number => {
+export const highestRank = (arr: number[]): number => {
   const map: MyMap = {};
   arr.forEach((item) => {
     map[item] = map[item] ? map[item] + 1 : 1;
@@ -23,7 +23,7 @@ const highestRank = (arr: number[]): number => {
       .sort((x, y) => {
         return y[1] - x[1];
       })
-      .filter((value, index, array) => {
+      .filter((value, _, array) => {
         return value[1] === array[0][1] ? true : false;
       })
       .reduce((acc, curr) =>
@@ -31,6 +31,3 @@ const highestRank = (arr: number[]): number => {
       )[0],
   );
 };
-
-const case1 = highestRank([12, 10, 8, 12, 7, 6, 4, 10, 10, 12]);
-console.assert(case1 === 12, "case1 === 12");

@@ -67,12 +67,12 @@ enum Moves {
   "right",
 }
 
-const fighters = [
+export const fighters = [
   ["Ryu", "E.Honda", "Blanka", "Guile", "Balrog", "Vega"],
   ["Ken", "Chun Li", "Zangief", "Dhalsim", "Sagat", "M.Bison"],
 ];
 
-const streetFighterSelection = (
+export const streetFighterSelection = (
   fighters: Array<string[]>,
   position: number[],
   moves: Array<keyof typeof Moves>,
@@ -107,30 +107,3 @@ const streetFighterSelection = (
     return fighters[position[0]][position[1]];
   });
 };
-
-const case1 = streetFighterSelection(
-  fighters,
-  [0, 0],
-  ["up", "left", "right", "left", "left"],
-);
-["Ryu", "Vega", "Ryu", "Vega", "Balrog"].forEach((item, index) => {
-  if (item !== case1[index]) throw new Error("Test failed for case1");
-});
-
-const case2 = streetFighterSelection(
-  fighters,
-  [0, 0],
-  ["left", "left", "left", "left", "left", "left", "left", "left"],
-);
-[
-  "Vega",
-  "Balrog",
-  "Guile",
-  "Blanka",
-  "E.Honda",
-  "Ryu",
-  "Vega",
-  "Balrog",
-].forEach((item, index) => {
-  if (item !== case2[index]) throw new Error("Test failed for case2");
-});

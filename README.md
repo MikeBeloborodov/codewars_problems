@@ -22,8 +22,8 @@ node count.js
 ```
 
 ### Katas solved
-- ```Total```: 32
-- ```8_kyu```: 5
+- ```Total```: 33
+- ```8_kyu```: 6
 - ```7_kyu```: 3
 - ```6_kyu```: 14
 - ```5_kyu```: 7

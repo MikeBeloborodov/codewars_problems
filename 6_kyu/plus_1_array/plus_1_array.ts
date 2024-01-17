@@ -20,7 +20,7 @@ Invalid arrays
 [1, 2, 33] is invalid because 33 is not a single-digit integer
   * */
 
-const upArray = (arr: number[]): number[] | null => {
+export const upArray = (arr: number[]): number[] | null => {
   if (arr.length === 0) return null;
   if (arr.some((item) => (item < 0 ? true : item > 9 ? true : false)))
     return null;
@@ -35,25 +35,3 @@ const upArray = (arr: number[]): number[] | null => {
   }
   return res;
 };
-
-const case1 = upArray([4, 3, 2, 5]);
-console.assert(JSON.stringify(case1) === JSON.stringify([4, 3, 2, 6]));
-
-const case2 = upArray([0, 7]);
-console.assert(JSON.stringify(case2) === JSON.stringify([0, 8]));
-
-const case3 = upArray([9, 9]);
-console.assert(JSON.stringify(case3) === JSON.stringify([1, 0, 0]));
-
-const case4 = upArray([
-  1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0,
-]);
-console.assert(
-  JSON.stringify(case4) ===
-    JSON.stringify([
-      1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1,
-    ]),
-);
-
-const case5 = upArray([0, 0, 4, 3, 9]);
-console.assert(JSON.stringify(case5) === JSON.stringify([0, 0, 4, 4, 0]));

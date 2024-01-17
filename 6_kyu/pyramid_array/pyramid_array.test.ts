@@ -1,4 +1,4 @@
-import { pyramid } from "./5_pyramid_array";
+import { pyramid } from "./pyramid_array";
 
 test("test case 1", () => {
   expect(JSON.stringify(pyramid(0))).toBe(JSON.stringify([]));

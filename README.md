@@ -22,7 +22,7 @@ node count.js
 ```
 
 ### Katas solved
-- ```Total```: 34
+- ```Total```: 35
 - ```8_kyu```: 6
 - ```7_kyu```: 4
 - ```6_kyu```: 14

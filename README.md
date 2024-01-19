@@ -21,9 +21,14 @@ bash new.sh $kata_folder $kata_name
 node count.js
 ```
 
+### Auto README formation
+```sh
+node getReadme.js $kata_url $path_to_kata_folder
+```
+
 ### Katas solved
-- ```Total```: 36
-- ```8_kyu```: 6
+- ```Total```: 37
+- ```8_kyu```: 7
 - ```7_kyu```: 5
 - ```6_kyu```: 14
 - ```5_kyu```: 8

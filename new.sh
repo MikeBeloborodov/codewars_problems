@@ -1,3 +1,4 @@
+#!/bin/bash
 git checkout -b "$1_$2"
 cd "$1"
 mkdir "$2"

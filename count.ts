@@ -1,10 +1,10 @@
-const fs = require("fs");
+import * as fs from "fs";
 
 /**
  * Returns an array of file names in the root directory.
  * @param root A path to root directory.
  */
-function getFolders(root) {
+function getFolders(root: string): string[] {
   return fs.readdirSync(root);
 }
 
@@ -13,8 +13,12 @@ function getFolders(root) {
  * @param folders A string of folder names.
  * @param name A substring to filter by.
  */
-function filterFolders(folders, name) {
+function filterFolders(folders: string[], name: string): string[] {
   return folders.filter((item) => item.includes(name));
+}
+
+interface FilesObject {
+  [k: string]: number;
 }
 
 /**
@@ -22,12 +26,12 @@ function filterFolders(folders, name) {
  * and values are number of subfolders.
  * @param folders A string of folder names.
  */
-function getFilesObj(folders) {
+function getFilesObj(folders: string[]): FilesObject {
   return folders.reduce((obj, path) => {
     const innerFolders = getFolders(path);
     obj[path] = innerFolders.length;
     return obj;
-  }, {});
+  }, {} as FilesObject);
 }
 
 /**
@@ -35,7 +39,7 @@ function getFilesObj(folders) {
  * and values are number of subfolders.
  * @param filesObj An object, where keys are subfolders
  */
-function getTotalFiles(filesObj) {
+function getTotalFiles(filesObj: FilesObject) {
   let total = 0;
   for (let key in filesObj) {
     total += filesObj[key];
@@ -47,7 +51,7 @@ function getTotalFiles(filesObj) {
  * Reads and returns a string from a file.
  * @param file A path to file.
  */
-function getFileString(filePath) {
+function getFileString(filePath: string): string {
   return fs.readFileSync(filePath, { encoding: "utf8" });
 }
 
@@ -56,14 +60,14 @@ function getFileString(filePath) {
  * @param  str A string from readme.
  * @param filesObj An object, where keys are subfolders
  */
-function refreshFilesCount(str, filesObj) {
-  const re = (value) => new RegExp(`(?<=${value}.+: )\\d+`, "g");
+function refreshFilesCount(str: string, filesObj: FilesObject): string {
+  const re = (value: string) => new RegExp(`(?<=${value}.+: )\\d+`, "g");
 
   for (let path in filesObj) {
-    str = str.replace(re(path), () => filesObj[path]);
+    str = str.replace(re(path), () => filesObj[path].toString());
   }
 
-  str = str.replace(re("Total"), () => getTotalFiles(filesObj));
+  str = str.replace(re("Total"), () => getTotalFiles(filesObj).toString());
 
   return str;
 }
@@ -73,11 +77,11 @@ function refreshFilesCount(str, filesObj) {
  * @param filePath A path to file.
  * @param str New string to write.
  */
-function writeFileString(filePath, str) {
+function writeFileString(filePath: string, str: string): void {
   fs.writeFileSync(filePath, str);
 }
 
-function main() {
+function main(): void {
   const folders = getFolders("./");
   const filteredFolders = filterFolders(folders, "kyu");
   const filesObj = getFilesObj(filteredFolders);

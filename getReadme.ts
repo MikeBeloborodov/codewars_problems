@@ -1,6 +1,6 @@
-const puppeteer = require("puppeteer");
-const jimp = require("jimp");
-const fs = require("fs");
+import puppeteer from "puppeteer";
+import Jimp from "jimp";
+import * as fs from "fs";
 
 const URL = process.argv[2];
 const PATH = process.argv[3];
@@ -13,8 +13,8 @@ async function getTitleAndScreenshot() {
 
   const description = await page.waitForSelector("#description");
   const titleEl = await page.waitForSelector("h4");
-  const title = await titleEl.evaluate((el) => el.textContent);
-  await description.screenshot({ path: `./${PATH}/description.png` });
+  const title = await titleEl?.evaluate((el) => el.textContent);
+  await description?.screenshot({ path: `./${PATH}/description.png` });
 
   await browser.close();
 
@@ -22,7 +22,7 @@ async function getTitleAndScreenshot() {
 }
 
 function processImage() {
-  jimp.read(`./${PATH}/description.png`, (err, img) => {
+  Jimp.read(`./${PATH}/description.png`, (err, img) => {
     if (err) throw err;
     img.quality(30).write(`./${PATH}/description.jpg`);
   });
@@ -34,7 +34,7 @@ function deleteImage() {
   );
 }
 
-function redactReadme(title) {
+function redactReadme(title: string) {
   const str = `### ${title}
 
 ${URL}
@@ -47,7 +47,7 @@ async function main() {
   const title = await getTitleAndScreenshot();
   processImage();
   deleteImage();
-  redactReadme(title);
+  redactReadme(title ? title : "");
 }
 
 main();

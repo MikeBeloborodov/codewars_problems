@@ -13,7 +13,8 @@ dashatize(6815) -> '68-1-5'
 
 // my solution
 
-export const dashatize = (num: number): string | "NaN" => {
+export const dashatize = (num: any): string | "NaN" => {
+  if (Number.isNaN(parseInt(num))) return "NaN";
   let res = Math.abs(num)
     .toString()
     .split("")
@@ -22,7 +23,7 @@ export const dashatize = (num: number): string | "NaN" => {
     .replace(/--/g, "-");
   if (res[0] === "-") res = res.slice(1);
   if (res[res.length - 1] === "-") res = res.slice(0, res.length - 1);
-  return Number.isNaN(num) ? "NaN" : res;
+  return res;
 };
 
 // regexp solution

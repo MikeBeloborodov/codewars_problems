@@ -8,7 +8,7 @@ Various problems by kyu from website https://www.codewars.com/
 git pull https://github.com/MikeBeloborodov/codewars_problems
 cd codewars_problems
 npm i
-npm run test
+npm run testall
 ```
 
 ### Add new kata

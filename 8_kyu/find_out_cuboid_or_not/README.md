@@ -4,8 +4,8 @@ https://www.codewars.com/kata/58d248c7012397a81800005c
 
 To find the volume (centimeters cubed) of a cuboid you use the formula:
 
-```volume = Length * Width * Height```
-    
+`volume = Length * Width * Height`
+
 But someone forgot to use proper record keeping, so we only have the volume, and the length of a single side!
 
 It's up to you to find out whether the cuboid has equal sides (= is a cube).

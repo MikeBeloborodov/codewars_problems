@@ -11,7 +11,9 @@ You're running out of screen real estate, and on some pages you want to display 
 Write a function that takes the website date/time in its original string format and returns the shortened format.
 
 ## Input
-Input will always be a string, e.g., `"Friday May 2, 7pm"`. 
+
+Input will always be a string, e.g., `"Friday May 2, 7pm"`.
 
 ## Output
+
 Output will be the shortened string, e.g., `"Friday May 2"`.

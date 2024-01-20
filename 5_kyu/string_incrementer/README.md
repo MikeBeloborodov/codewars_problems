@@ -17,5 +17,4 @@ Examples:
 
 `foo099 -> foo100`
 
-*Attention: If the number has leading zeros the amount of digits should be considered.*
-
+_Attention: If the number has leading zeros the amount of digits should be considered._

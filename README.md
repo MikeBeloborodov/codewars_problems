@@ -5,7 +5,7 @@
 
 ---
 
-![Codewars](https://www.codewars.com/users/MikeBelov/badges/large)
+![Codewars](https://www.codewars.com/users/MikeBeloborodov/badges/large)
 
 ## About
 

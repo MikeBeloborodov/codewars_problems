@@ -3,6 +3,10 @@
 [![Test workflow](https://github.com/MikeBeloborodov/codewars_problems/actions/workflows/main.yml/badge.svg)](https://github.com/MikeBeloborodov/codewars_problems/actions/workflows/main.yml)
 ![GitHub repo size](https://img.shields.io/github/repo-size/MikeBeloborodov/codewars_problems)
 
+---
+
+![Codewars](https://www.codewars.com/users/MikeBelov/badges/large)
+
 ## About
 
 Various problems by kyu from website https://www.codewars.com/

@@ -35,9 +35,9 @@ node getReadme.js $kata_url $path_to_kata_folder
 
 ### Katas solved
 
-- `Total`: 39
+- `Total`: 40
 - `8_kyu`: 9
-- `7_kyu`: 5
+- `7_kyu`: 6
 - `6_kyu`: 14
 - `5_kyu`: 8
 - `4_kyu`: 3

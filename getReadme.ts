@@ -39,7 +39,8 @@ function redactReadme(title: string) {
 
 ${URL}
 
-![description](./description.jpg "Description")`;
+![description](./description.jpg "Description")
+`;
   fs.writeFileSync(`${PATH}/README.md`, str);
 }
 

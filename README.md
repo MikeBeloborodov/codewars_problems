@@ -35,14 +35,14 @@ node count.js
 ### Auto README formation
 
 ```sh
-node getReadme.js $kata_url $path_to_kata_folder
+ts-node getReadme.ts $kata_url $path_to_kata_folder
 ```
 
 ### Katas solved
 
-- `Total`: 40
+- `Total`: 41
 - `8_kyu`: 9
 - `7_kyu`: 6
-- `6_kyu`: 14
+- `6_kyu`: 15
 - `5_kyu`: 8
 - `4_kyu`: 3

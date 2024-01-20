@@ -1,6 +1,6 @@
-const puppeteer = require("puppeteer");
-const jimp = require("jimp");
-const fs = require("fs");
+import puppeteer from "puppeteer";
+import Jimp from "jimp";
+import * as fs from "fs";
 
 const URL = process.argv[2];
 const PATH = process.argv[3];
@@ -22,7 +22,7 @@ async function getTitleAndScreenshot() {
 }
 
 function processImage() {
-  jimp.read(`./${PATH}/description.png`, (err, img) => {
+  Jimp.read(`./${PATH}/description.png`, (err, img) => {
     if (err) throw err;
     img.quality(30).write(`./${PATH}/description.jpg`);
   });

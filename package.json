@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Various problems by kyu from website https://www.codewars.com/",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest --coverage -o",
     "testall": "jest --coverage"
@@ -16,6 +17,7 @@
     "jimp": "^0.22.10",
     "puppeteer": "^21.7.0",
     "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   }
 }

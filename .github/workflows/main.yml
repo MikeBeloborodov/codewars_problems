@@ -19,3 +19,7 @@ jobs:
       - uses: actions/checkout@v3
       - run: npm install
       - run: npm run testall
+      - uses: codecov/codecov-action@v3
+          env: 
+            CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+    

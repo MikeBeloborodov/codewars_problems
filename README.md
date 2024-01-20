@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/MikeBeloborodov/codewars_problems/graph/badge.svg?token=276C6UO7OL)](https://codecov.io/gh/MikeBeloborodov/codewars_problems)
+
 ## About
 
 Various problems by kyu from website https://www.codewars.com/

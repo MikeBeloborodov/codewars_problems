@@ -6,6 +6,7 @@ You are given an array of unique numbers. The numbers represent points. The high
 
 Your task is to return an array giving each number its rank in the array.
 
+```JavaScript
 input // [1,3,2]
 output // [3,1,2]
 rankings([1,2,3,4,5]) // [5,4,3,2,1]
@@ -13,3 +14,4 @@ rankings([3,4,1,2,5])// [3,2,5,4,1]
 rankings([10,20,40,50,30]) // [5, 4, 2, 1, 3]
 rankings([1, 10]) // [2, 1]
 rankings([22, 33, 18, 9, 110, 4, 1, 88, 6, 50]) // [5, 4, 6, 7, 1, 9, 10, 2, 8, 3]
+```

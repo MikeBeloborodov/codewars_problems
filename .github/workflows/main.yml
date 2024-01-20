@@ -10,9 +10,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  hello:
+  build-node:
     runs-on: ubuntu-latest
+    container: node:14
     steps:
-      - name: hello world
-        run: echo "Hello World!"
-        shell: bash
+      - run: node --version
+      - run: npm --version
+      - uses: actions/checkout@v3
+      - run: npm install
+      - run: npm run testall

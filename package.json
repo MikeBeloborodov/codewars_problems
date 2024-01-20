@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Various problems by kyu from website https://www.codewars.com/",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "jest --coverage -o",
     "testall": "jest --coverage"

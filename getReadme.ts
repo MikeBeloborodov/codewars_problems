@@ -13,8 +13,8 @@ async function getTitleAndScreenshot() {
 
   const description = await page.waitForSelector("#description");
   const titleEl = await page.waitForSelector("h4");
-  const title = await titleEl.evaluate((el) => el.textContent);
-  await description.screenshot({ path: `./${PATH}/description.png` });
+  const title = await titleEl?.evaluate((el) => el.textContent);
+  await description?.screenshot({ path: `./${PATH}/description.png` });
 
   await browser.close();
 
@@ -34,7 +34,7 @@ function deleteImage() {
   );
 }
 
-function redactReadme(title) {
+function redactReadme(title: string) {
   const str = `### ${title}
 
 ${URL}
@@ -47,7 +47,7 @@ async function main() {
   const title = await getTitleAndScreenshot();
   processImage();
   deleteImage();
-  redactReadme(title);
+  redactReadme(title ? title : "");
 }
 
 main();

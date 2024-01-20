@@ -13,4 +13,6 @@ describe("string incrementer tests", () => {
     expect(incrementString("foo19")).toBe("foo20"));
   it("should return foo9bar00100", () =>
     expect(incrementString("foo9bar00099")).toBe("foo9bar00100"));
+  it("should return foo9bar00077", () =>
+    expect(incrementString("foo9bar00076")).toBe("foo9bar00077"));
 });

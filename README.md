@@ -1,5 +1,6 @@
 [![codecov](https://codecov.io/gh/MikeBeloborodov/codewars_problems/graph/badge.svg?token=276C6UO7OL)](https://codecov.io/gh/MikeBeloborodov/codewars_problems)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/563776c906754dc7ac3f31217a1ff03f)](https://app.codacy.com/gh/MikeBeloborodov/codewars_problems/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+![Workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
 
 ## About
 

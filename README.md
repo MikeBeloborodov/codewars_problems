@@ -23,19 +23,19 @@ npm run testall
 ### Add new kata
 
 ```sh
-bash new.sh $kata_folder $kata_name
+npm run new --kyu=$kyu_folder --name=$kata_name
 ```
 
 ### Refresh kata count
 
 ```sh
-node count.js
+npm run count
 ```
 
 ### Auto README formation
 
 ```sh
-ts-node getReadme.ts $kata_url $path_to_kata_folder
+npm run readme --url=$kata_url --path=$path_to_kata_folder
 ```
 
 ### Katas solved

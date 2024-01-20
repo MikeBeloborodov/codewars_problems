@@ -23,26 +23,26 @@ npm run testall
 ### Add new kata
 
 ```sh
-bash new.sh $kata_folder $kata_name
+npm run new --kyu=$kyu_folder --name=$kata_name
 ```
 
 ### Refresh kata count
 
 ```sh
-node count.js
+npm run count
 ```
 
 ### Auto README formation
 
 ```sh
-node getReadme.js $kata_url $path_to_kata_folder
+npm run readme --url=$kata_url --path=$path_to_kata_folder
 ```
 
 ### Katas solved
 
-- `Total`: 40
+- `Total`: 41
 - `8_kyu`: 9
 - `7_kyu`: 6
-- `6_kyu`: 14
+- `6_kyu`: 15
 - `5_kyu`: 8
 - `4_kyu`: 3

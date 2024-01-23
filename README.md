@@ -40,9 +40,9 @@ npm run readme --url=$kata_url --path=$path_to_kata_folder
 
 ### Katas solved
 
-- `Total`: 50
+- `Total`: 51
 - `8_kyu`: 13
 - `7_kyu`: 10
-- `6_kyu`: 16
+- `6_kyu`: 17
 - `5_kyu`: 8
 - `4_kyu`: 3

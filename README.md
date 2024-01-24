@@ -38,6 +38,12 @@ npm run count
 npm run readme --url=$kata_url --path=$path_to_kata_folder
 ```
 
+### Checkout to main and delete current branch
+
+```sh
+npm run chde
+```
+
 ### Katas solved
 
 - `Total`: 51

@@ -20,22 +20,16 @@ npm i
 npm run testall
 ```
 
-### Add new kata
+### Add new kata with ts file, tests, readme and description
 
 ```sh
-npm run new --kyu=$kyu_folder --name=$kata_name
+npm run new --kyu=$kyu_folder --name=$kata_name --url=$kata_url
 ```
 
 ### Refresh kata count
 
 ```sh
 npm run count
-```
-
-### Auto README formation
-
-```sh
-npm run readme --url=$kata_url --path=$path_to_kata_folder
 ```
 
 ### Checkout to main and delete current branch
@@ -46,9 +40,9 @@ npm run chde
 
 ### Katas solved
 
-- `Total`: 52
-- `8_kyu`: 14
-- `7_kyu`: 10
-- `6_kyu`: 17
-- `5_kyu`: 8
-- `4_kyu`: 3
+`Total`: 53
+`8_kyu`: 14
+`7_kyu`: 10
+`6_kyu`: 18
+`5_kyu`: 8
+`4_kyu`: 3

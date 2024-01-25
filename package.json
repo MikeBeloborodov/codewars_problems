@@ -8,7 +8,7 @@
     "testall": "jest --coverage",
     "count": "ts-node ./count.ts",
     "readme": "ts-node ./getReadme.ts ${npm_config_url} ${npm_config_path}",
-    "new": "bash new.sh ${npm_config_kyu} ${npm_config_name}",
+    "new": "bash new.sh ${npm_config_kyu} ${npm_config_name} ${npm_config_url}",
     "chde": "bash checkoutDelete.sh"
   },
   "keywords": [],

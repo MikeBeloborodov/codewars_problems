@@ -40,11 +40,11 @@ npm run chde
 
 ### Katas solved
 
-`Total`: 53
+`Total`: 54
 \
 `8_kyu`: 14
 \
-`7_kyu`: 10
+`7_kyu`: 11
 \
 `6_kyu`: 18
 \

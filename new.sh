@@ -6,3 +6,4 @@ cd "$2"
 touch "$2".ts "$2".test.ts README.md
 cd "../../"
 ts-node ./getReadme.ts "$3" "$1/$2"
+npm run count

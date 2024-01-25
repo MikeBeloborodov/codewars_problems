@@ -38,11 +38,17 @@ npm run count
 npm run chde
 ```
 
+### Push to github
+
+```sh
+npm run push
+```
+
 ### Katas solved
 
-`Total`: 54
+`Total`: 55
 \
-`8_kyu`: 14
+`8_kyu`: 15
 \
 `7_kyu`: 11
 \

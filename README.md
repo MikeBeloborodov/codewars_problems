@@ -41,7 +41,7 @@ npm run chde
 ### Push to github
 
 ```sh
-npm run push
+npm run push "$description"
 ```
 
 ### Katas solved

@@ -46,11 +46,11 @@ npm run push
 
 ### Katas solved
 
-`Total`: 60
+`Total`: 61
 \
 `8_kyu`: 18
 \
-`7_kyu`: 13
+`7_kyu`: 14
 \
 `6_kyu`: 18
 \

@@ -2,7 +2,7 @@
 
 https://www.codewars.com/kata/58e16de3a312d34d000000bd/
 
-You are given an array of unique numbers. The numbers represent points. The higher the number the higher the points. In the array [1,3,2] 3 is the highest point value so it gets 1st place. 2 is the second highest so it gets second place. 1 is the 3rd highest so it gets 3rd place.
+You are given an array of unique numbers. The numbers represent points. The higher the number the higher the points. In the array `[1,3,2]` 3 is the highest point value so it gets 1st place. 2 is the second highest so it gets second place. 1 is the 3rd highest so it gets 3rd place.
 
 Your task is to return an array giving each number its rank in the array.
 

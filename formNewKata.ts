@@ -19,7 +19,16 @@ async function getTitleAndScreenshot() {
   );
   const kyu = await kyuEl?.evaluate((el) => el.textContent);
   const kyu_path = `./${kyu?.replace(" ", "_")}`;
-  const clean_title = title?.replace(/\W/g, "")?.replace(/\s/g, "_");
+  const clean_title = title
+    ?.split(" ")
+    .map((s) =>
+      s
+        .toLowerCase()
+        .replace(/[^0-9\w]/g, "")
+        .trim(),
+    )
+    .filter((s) => s)
+    .join("_");
   FULL_PATH = kyu_path + `/${clean_title}`;
   if (!fs.existsSync(kyu_path)) {
     fs.mkdirSync(kyu_path);

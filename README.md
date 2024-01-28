@@ -23,7 +23,7 @@ npm run testall
 ### Add new kata with ts file, tests, readme and description
 
 ```sh
-npm run new --kyu=$kyu_folder --name=$kata_name --url=$kata_url
+npm run new --url=$kata_url
 ```
 
 ### Refresh kata count
@@ -46,11 +46,11 @@ npm run push "$description"
 
 ### Katas solved
 
-`Total`: 67
+`Total`: 68
 \
 `8_kyu`: 19
 \
-`7_kyu`: 16
+`7_kyu`: 17
 \
 `6_kyu`: 20
 \

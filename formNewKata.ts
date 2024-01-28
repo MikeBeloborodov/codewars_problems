@@ -38,7 +38,7 @@ async function getTitleAndScreenshot() {
   fs.writeFileSync(FULL_PATH + `/${clean_title}.test.ts`, "");
   fs.writeFileSync(FULL_PATH + `/${clean_title}.ts`, "");
   fs.writeFileSync(FULL_PATH + `/README.md`, "");
-  console.log(clean_title);
+  console.log(kyu?.replace(" ", "_") + "_" + clean_title);
 
   await description?.screenshot({ path: FULL_PATH + `/description.png` });
 

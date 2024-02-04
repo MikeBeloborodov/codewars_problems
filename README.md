@@ -22,6 +22,10 @@ npm run testall
 
 ### Add new kata with ts file, tests, readme and description
 
+You only need a unique ID in the url \
+For example, if url is https://www.codewars.com/kata/54a2e93b22d236498400134b/train/javascript \
+you only need the 54a2e93b22d236498400134b part.
+
 ```sh
 npm run new --url=$kata_url
 ```
@@ -46,13 +50,13 @@ npm run push "$description"
 
 ### Katas solved
 
-`Total`: 85
+`Total`: 86
 \
 `8_kyu`: 25
 \
 `7_kyu`: 26
 \
-`6_kyu`: 22
+`6_kyu`: 23
 \
 `5_kyu`: 9
 \

@@ -2,7 +2,7 @@ import puppeteer from "puppeteer";
 import Jimp from "jimp";
 import * as fs from "fs";
 
-const URL = process.argv[2].replace(/train\/.*/g, "");
+const URL = "https://www.codewars.com/kata/" + process.argv[2];
 let FULL_PATH = "";
 
 async function getTitleAndScreenshot() {

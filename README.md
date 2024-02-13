@@ -50,11 +50,11 @@ npm run push "$description"
 
 ### Katas solved
 
-`Total`: 96
+`Total`: 97
 \
 `8_kyu`: 28
 \
-`7_kyu`: 30
+`7_kyu`: 31
 \
 `6_kyu`: 26
 \

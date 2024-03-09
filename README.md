@@ -50,11 +50,19 @@ npm run push "$description"
 
 ### Katas solved
 
+<<<<<<< HEAD
 `Total`: 141
+=======
+`Total`: 118
+>>>>>>> 72107ec (numbers to letters)
 \
 `8_kyu`: 45
 \
+<<<<<<< HEAD
 `7_kyu`: 47
+=======
+`7_kyu`: 39
+>>>>>>> 72107ec (numbers to letters)
 \
 `6_kyu`: 36
 \

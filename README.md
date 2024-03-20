@@ -56,7 +56,7 @@ npm run push "$description"
 \
 `7_kyu`: 41
 \
-`6_kyu`: 31
+`6_kyu`: 32
 \
 `5_kyu`: 10
 \

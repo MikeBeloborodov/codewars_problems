@@ -36,6 +36,12 @@ npm run new --url=$kata_url
 npm run count
 ```
 
+### Add, commit and checkout to main
+
+```sh
+npm run commit
+```
+
 ### Checkout to main and delete current branch
 
 ```sh

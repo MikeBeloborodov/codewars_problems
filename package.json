@@ -10,7 +10,8 @@
     "readme": "ts-node ./formNewKata.ts ${npm_config_url} ${npm_config_path}",
     "new": "bash new.sh ${npm_config_url}",
     "chde": "bash checkoutDelete.sh",
-    "push": "bash push.sh"
+    "push": "bash push.sh",
+    "commit": "bash commitCheckout.sh"
   },
   "keywords": [],
   "author": "MikeBeloborodov/codewars_problems",

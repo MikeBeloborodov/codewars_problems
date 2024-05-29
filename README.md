@@ -56,11 +56,19 @@ npm run push "$description"
 
 ### Katas solved
 
+<<<<<<< HEAD
 `Total`: 151
+=======
+`Total`: 149
+>>>>>>> 83961ea (7_kyu_remove_all_the_marked_elements_of_a_list)
 \
 `8_kyu`: 49
 \
+<<<<<<< HEAD
 `7_kyu`: 51
+=======
+`7_kyu`: 50
+>>>>>>> 83961ea (7_kyu_remove_all_the_marked_elements_of_a_list)
 \
 `6_kyu`: 38
 \
